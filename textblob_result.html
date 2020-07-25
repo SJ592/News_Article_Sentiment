@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Textblob NLP</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap/css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/textblob.css') }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<nav class="navbar navbar-expand-md">
+  		<h1 class="navbar-brand" style="margin-left: 650px">Textblob NLP</h1>
+  	</nav>
+  	<header class="page-header header container-fluid">
+	<div class="overflow-auto">
+		<br>
+		<br>
+		Number of tokens (Title): {{ Title }}
+		<br>
+		<br>
+		Number of tokens (Content): {{ Content }}
+		<br>
+		<br>
+		Sentiment polarity (Title): {{ Title_sentiment }}
+		<br>
+		<br>
+		Sentiment polarity (Content): {{ Content_sentiment }}
+		<br>
+		<br>
+		Subjectivity (Title): {{ Title_subjectivity }}
+		<br>
+		<br>
+		Subjectivity (Content): {{ Content_subjectivity }}
+		<br>
+		<br>
+	</div>
+</header>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Textblob NLP</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap/css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/textblob.css') }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<nav class="navbar navbar-expand-md">
+  		<h1 class="navbar-brand" style="margin-left: 650px">Textblob NLP</h1>
+  	</nav>
+  	<header class="page-header header container-fluid">
+	<div class="overflow-auto">
+		<form class="form" action="/result" method="POST">
+			<br>
+			Title:<br> <input id="Title" type="text" name="title" placeholder="Enter the title" style="width: 900px;"> <!--flask considers 'name' attri-->
+			<br>
+			<br>
+			Content:<br> <textarea id="Content" type="text" name="content" placeholder="Enter the Content" style="width: 900px;height: 400px;"></textarea>
+			<br>
+			<br>
+			<input id="submit_btn" type="submit" value="Submit">
+		</form>
+	</div>
+	</header>
+	<link rel="JavaScript" href="{{ url_for('static', filename='css/bootstrap/css/bootstrap.min.js') }}">
+</body>
+</html>
